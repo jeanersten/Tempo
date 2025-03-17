@@ -15,6 +15,7 @@ FetchContent_MakeAvailable(SFML)
 
 add_executable(tempo 
   src/Main.cpp
+  src/Game.cpp
 )
 target_link_libraries(tempo PRIVATE sfml-graphics)
 target_compile_features(tempo PRIVATE cxx_std_17)
