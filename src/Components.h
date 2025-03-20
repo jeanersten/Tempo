@@ -17,3 +17,13 @@ struct CShape
 
   CShape(float radius, const sf::Color& color);
 };
+
+struct CInput
+{
+  bool left {};
+  bool right {};
+  bool up {};
+  bool down {};
+
+  CInput();
+};

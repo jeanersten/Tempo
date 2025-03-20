@@ -11,3 +11,6 @@ CShape::CShape(float radius, const sf::Color& color)
   visual.setOrigin(radius, radius);
   visual.setFillColor(color);
 }
+
+CInput::CInput()
+{}

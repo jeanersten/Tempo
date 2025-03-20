@@ -14,8 +14,11 @@ FetchContent_Declare(SFML
 FetchContent_MakeAvailable(SFML)
 
 add_executable(tempo 
-  src/Main.cpp
+  src/Components.cpp
+  src/Entity.cpp
+  src/EntityManager.cpp
   src/Game.cpp
+  src/Main.cpp
 )
 target_link_libraries(tempo PRIVATE sfml-graphics)
 target_compile_features(tempo PRIVATE cxx_std_17)
