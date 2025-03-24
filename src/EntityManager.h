@@ -3,7 +3,7 @@
 #include "Entity.h"
 
 #include <map>
-#include <memory>
+#include <string>
 #include <vector>
 
 typedef std::vector<std::shared_ptr<Entity>> EntityList;

@@ -1,10 +1,12 @@
+#pragma once
+
 #include "Entity.h"
 #include "EntityManager.h"
 
-#include <SFML/Graphics/Font.hpp>
-#include <SFML/Graphics/RenderStates.hpp>
-#include <SFML/Graphics/RenderWindow.hpp>
-#include <SFML/Graphics/Text.hpp>
+#include <SFML/Graphics.hpp>
+#include <SFML/System.hpp>
+#include <SFML/Window.hpp>
+
 #include <memory>
 #include <string>
 
@@ -88,9 +90,8 @@ private:
   void setPaused(bool paused);
 
   void spawnPlayer();
-  void shoot(std::shared_ptr<Entity> player, sf::Vector2f mouse_pos);
-  void ultimate(std::shared_ptr<Entity> player);
-
+  void spawnBullet(std::shared_ptr<Entity> player, sf::Vector2f mouse_pos);
+  void spawnUltimate(std::shared_ptr<Entity> player);
   void spawnEnemy();
   void spawnSmallEnemies(std::shared_ptr<Entity> enemy);
 

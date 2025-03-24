@@ -1,7 +1,9 @@
 #include "Components.h"
-#include <SFML/System/Vector2.hpp>
 
-CTransform::CTransform(sf::Vector2f position, sf::Vector2f speed, float angle)
+#include <SFML/Graphics.hpp>
+#include <SFML/System.hpp>
+
+CTransform::CTransform(sf::Vector2f position, float speed, float angle)
   : position(position)
   , speed(speed)
   , angle(angle)

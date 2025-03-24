@@ -19,6 +19,7 @@ add_executable(tempo
   src/EntityManager.cpp
   src/Game.cpp
   src/Main.cpp
+  src/Utils.cpp
 )
 target_link_libraries(tempo PRIVATE sfml-graphics)
 target_compile_features(tempo PRIVATE cxx_std_17)

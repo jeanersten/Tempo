@@ -6,7 +6,6 @@
 #include <memory>
 #include <string>
 
-
 class Entity
 {
 friend class EntityManager;

@@ -1,14 +1,15 @@
 #pragma once
 
-#include <SFML/Graphics/CircleShape.hpp>
+#include <SFML/Graphics.hpp>
+#include <SFML/System.hpp>
 
 struct CTransform
 {
   sf::Vector2f position {};
-  sf::Vector2f speed {};
+  float speed {};
   float angle {};
 
-  CTransform(sf::Vector2f position, sf::Vector2f speed, float angle);
+  CTransform(sf::Vector2f position, float speed, float angle);
 };
 
 struct CShape
@@ -37,8 +38,8 @@ struct CLifeSpan
 
 struct CInput
 {
-  bool right {};
   bool left {};
+  bool right {};
   bool up {};
   bool down {};
 
